@@ -16,7 +16,7 @@ New-UDPage -Name "Home" -Icon cog -Content {
         } | Out-UDGridData
     }
 
-    New-UDMuButton -Icon (New-UDMuIcon -Icon plus) -Text "New" -Variant contained -OnClick {
+    New-UDMuButton -Icon (New-UDIcon -Icon plus) -Text "New" -Variant contained -OnClick {
         Show-UDModal -Header {
             New-UDHeading -Text "New Session Configuration" -Size 2
         } -Content {
@@ -58,7 +58,7 @@ New-UDPage -Name "Home" -Icon cog -Content {
         } | Out-UDGridData
     }
 
-    New-UDMuButton -Icon (New-UDMuIcon -Icon plus) -Text "New" -Variant contained -OnClick {
+    New-UDMuButton -Icon (New-UDIcon -Icon plus) -Text "New" -Variant contained -OnClick {
 
         Show-UDModal -Header {
             New-UDHeading -Text "New Role Capability" -Size 3
